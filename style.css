@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Gilroy-Regular";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 0.1px;
+    position: absolute;
+}
+#nav{
+    height: 12vh;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav h2{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-weight: 600;
+    font-size: 26px;
+}
+#nav h1{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    letter-spacing: -1px;
+    font-family: "monument extended";
+}
+#nav h2:nth-last-child(2){
+    width: 24%;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#centre{
+    height: 80%;
+    width: 100%;
+    padding: 4vw;
+    position: relative;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#content video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#overlay{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+ 
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    margin-bottom: 2vh;
+}
+#over1 h1{
+    font-family: "monument extended";
+    font-size: 3.6vw;
+}
+#over1 h2{
+    font-size: 1vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 2vw 2.2vw;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-top: 2px solid #fff;
+}
+#over2 h4{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+#over2 img{
+    height: 3vw;
+}
+#scroll{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+    padding: 1vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    width: 110%;
+    height: 120%;
+    display: inline-block;
+    padding: 4vw;
+    animation-name: anime;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#scroll img{
+    height: 90%;
+    border-radius: 50%;
+    width: 16%;
+    margin: 1vw;
+    object-fit: cover;
+    object-position: 30% 30%;
+}
+@keyframes anime{
+    from{
+        transform: translateX(0%) ;
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#alphabet{
+    height: 10vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 1.2vh;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+#alphabet h5{
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.5vw;
+    font-weight: 400;
+    letter-spacing: 4px;
+    border-bottom: 2px solid black;
+}
+#alphabet h6{
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 4px;
+
+    padding: 0.6vw 0.8vw;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #00000000;
+    margin: 2px;
+    transition: all ease 0.2s;
+}
+#alphabet h6:hover{
+    border: 1px solid black ;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 5vw;
+}
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+
+}
+#page2-part2{
+    height: 100%;
+    width: 45%;
+}
+#page2-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
